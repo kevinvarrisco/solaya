@@ -1,0 +1,85 @@
+[hidden] { display: none !important; }
+/* Solaya Uluwatu - gaya dasar. Utilitas layout memakai Tailwind (lihat js/tailwind-config.js). */
+  :root {
+    --bg: #fff8f4;
+    --fg: #201b15;
+    --accent: #5c4c3a;
+    --accent-soft: #f6dfc6;
+    --muted: #4d453e;
+  }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--fg); overflow-x: hidden; }
+  section[id], footer[id] { scroll-margin-top: 5rem; }
+  ::-webkit-scrollbar { display: none; }
+  .material-symbols-outlined { font-family: 'Material Symbols Outlined'; font-weight: normal; font-style: normal; line-height: 1; display: inline-block; white-space: nowrap; letter-spacing: normal; text-transform: none; font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased; }
+  .lang-btn { background: none; border: 0; cursor: pointer; color: #4d453e; opacity: .65; font-weight: 500; }
+  .lang-btn:hover { opacity: 1; }
+  .lang-btn[aria-pressed="true"] { opacity: 1; color: #201b15; font-weight: 700; }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #5c4c3a; outline-offset: 2px; }
+
+  /* Cadangan gradasi: tampil kalau gambar di js/config.js kosong atau filenya tidak ditemukan. */
+  .ph { position: relative; background-size: cover; background-position: center; background-color: #8a7560; }
+  .ph-hero { background-image:
+    radial-gradient(ellipse 40% 18% at 62% 52%, rgba(255,214,150,.85), transparent 70%),
+    linear-gradient(180deg,#f2b987 0%,#e89d7c 26%,#c97d6e 42%,#7a7f92 54%,#3d6a82 68%,#24475c 85%,#1a3243 100%); }
+  .ph-stone { background-image:
+    repeating-linear-gradient(0deg, rgba(90,70,45,.10) 0 2px, transparent 2px 46px),
+    repeating-linear-gradient(90deg, rgba(90,70,45,.08) 0 2px, transparent 2px 92px),
+    linear-gradient(135deg,#eadcc6,#cdb99a 55%,#a89476); }
+  .ph-linen { background-image:
+    repeating-linear-gradient(90deg, rgba(120,100,75,.10) 0 1px, transparent 1px 5px),
+    linear-gradient(160deg,#efe4d2,#d9c7ac 60%,#bfa98b); }
+  .ph-colonnade { background-image:
+    repeating-linear-gradient(90deg, rgba(34,30,28,.78) 0 38px, transparent 38px 130px),
+    linear-gradient(180deg,#f0b98a 0%,#e0a48e 38%,#9aa0ac 58%,#4d7288 74%,#3b3835 76%,#6b625a 100%); }
+  .ph-court { background-image:
+    radial-gradient(circle at 50% 58%, #25241f 0 15%, #4a4a45 15.5% 17%, transparent 17.5%),
+    radial-gradient(ellipse 60% 40% at 50% 0%, rgba(255,245,225,.7), transparent 70%),
+    linear-gradient(180deg,#e6d6bb,#cdb894); }
+  .ph-ocean-res { background-image:
+    radial-gradient(ellipse 35% 14% at 70% 48%, rgba(255,200,140,.8), transparent 70%),
+    linear-gradient(180deg,#efb184 0%,#d98c7c 30%,#8a8aa0 46%,#3f7488 52%,#2b5b73 100%); }
+  .ph-garden { background-image:
+    radial-gradient(ellipse 30% 30% at 30% 70%, rgba(24,70,40,.8), transparent 70%),
+    radial-gradient(ellipse 35% 35% at 75% 40%, rgba(40,95,55,.75), transparent 70%),
+    linear-gradient(160deg,#6f9a6b,#3f6e4a 55%,#274b32); }
+  .ph-villa { background-image:
+    repeating-linear-gradient(90deg, rgba(60,35,15,.25) 0 6px, transparent 6px 40px),
+    radial-gradient(ellipse 40% 25% at 55% 70%, rgba(255,190,110,.7), transparent 70%),
+    linear-gradient(180deg,#8a5a34 0%,#b57b4a 45%,#d9a066 70%,#5b86914d 100%),
+    linear-gradient(180deg,#a86e3f,#6b4527); }
+  .ph-dining { background-image:
+    radial-gradient(circle at 30% 72%, rgba(255,196,110,.85) 0 2%, transparent 9%),
+    radial-gradient(circle at 55% 78%, rgba(255,196,110,.8) 0 2%, transparent 8%),
+    radial-gradient(circle at 75% 70%, rgba(255,196,110,.8) 0 2%, transparent 8%),
+    linear-gradient(180deg,#3b3446 0%,#6a4a4c 40%,#2a2620 70%,#1a1713 100%); }
+  .ph-sound { background-image:
+    radial-gradient(circle at 50% 62%, #b98a45 0 12%, #8c6431 12.5% 18%, transparent 19%),
+    radial-gradient(ellipse 50% 45% at 50% 40%, rgba(255,214,150,.55), transparent 70%),
+    linear-gradient(180deg,#6d5238,#3f2e20); }
+  .ph-yacht { background-image:
+    linear-gradient(180deg,#bfe0e8 0%,#8fc4d3 34%,#2fa2b5 46%,#127f98 70%,#0b5873 100%); }
+  .ph-kecak { background-image:
+    radial-gradient(ellipse 50% 40% at 50% 60%, rgba(255,150,50,.85), transparent 70%),
+    linear-gradient(180deg,#5a2a2a 0%,#b3502d 40%,#e08a3a 58%,#2a1a14 100%); }
+  .ph-pool { background-image:
+    radial-gradient(ellipse 30% 14% at 60% 55%, rgba(255,205,130,.9), transparent 70%),
+    linear-gradient(180deg,#f3bd88 0%,#e3a07a 32%,#d9b17c 48%,#6d9aa6 52%,#2f6379 100%); }
+  .ph-bed { background-image:
+    linear-gradient(180deg, rgba(255,255,255,.4), transparent 40%),
+    linear-gradient(160deg,#f1e8d9,#dccbb0 70%,#8a6a47 70.5%,#6b4d30); }
+  .ph-table { background-image:
+    radial-gradient(circle at 30% 60%, #efe6d6 0 9%, transparent 9.5%),
+    radial-gradient(circle at 65% 62%, #efe6d6 0 9%, transparent 9.5%),
+    radial-gradient(ellipse 60% 40% at 50% 30%, rgba(255,190,110,.5), transparent 70%),
+    linear-gradient(180deg,#2e2820,#4b3b2a); }
+  .ph-aerial { background-image:
+    radial-gradient(ellipse 35% 60% at 20% 55%, rgba(70,110,60,.8), transparent 70%),
+    linear-gradient(100deg,#2f6a46 0%,#6f8d5a 22%,#d7c7a6 34%,#28a3b4 46%,#0f7f9a 70%,#0b5a78 100%); }
+  .ph-map { background-image:
+    radial-gradient(circle at 48% 46%, rgba(92,76,58,.9) 0 6px, rgba(92,76,58,.25) 7px 26px, transparent 27px),
+    linear-gradient(115deg,#cdbf9f 0%,#dccfb0 38%,#a9c6c9 38.5%,#7fb0bd 100%); }
+  .ph-cta { background-image:
+    radial-gradient(ellipse 40% 25% at 50% 65%, rgba(255,170,90,.7), transparent 70%),
+    linear-gradient(180deg,#2f2a4f 0%,#8a4f5a 36%,#d9803f 60%,#7a5a40 62%,#2c3a46 100%); }
+  .ph-avatar { background-image: linear-gradient(135deg,#d9a066,#5c4c3a); }

@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Solaya Uluwatu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md" style="padding-top: env(safe-area-inset-top, 0px)">
+  <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter h-20 flex items-center justify-between">
+    <a class="flex items-center gap-space-sm group" href="#home">
+      <div data-img="avatar" class="ph ph-avatar w-8 h-8 rounded-full" role="img" aria-label="Profile"></div>
+      <div class="flex flex-col">
+        <span class="font-headline-sm text-headline-sm tracking-wide text-on-surface group-hover:text-primary transition-colors">SOLAYA</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant -mt-1">Uluwatu · Bali</span>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-space-lg" id="main-nav">
+      <a class="font-label-md text-label-md uppercase tracking-wider transition-colors py-1 text-on-surface border-b border-primary font-bold" href="#home" aria-current="page">Home</a>
+      <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#accommodation">Accommodation</a>
+      <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#experiences">Experiences</a>
+      <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#gallery">Gallery</a>
+      <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#location">Location</a>
+      <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" href="#reservations">Reservations</a>
+    </nav>
+    <div class="flex items-center gap-space-md">
+      <div class="flex items-center text-on-surface-variant" role="group" aria-label="Language">
+        <button type="button" class="lang-btn font-label-sm text-label-sm px-space-xs" data-lang="en" aria-pressed="true">EN</button>
+        <span class="font-label-sm text-label-sm text-outline-variant">/</span>
+        <button type="button" class="lang-btn font-label-sm text-label-sm px-space-xs" data-lang="id" aria-pressed="false">ID</button>
+      </div>
+      <a class="hidden sm:inline-flex items-center justify-center px-space-lg py-space-sm bg-inverse-surface text-inverse-on-surface font-label-md text-label-md tracking-widest uppercase transition-all duration-300 hover:bg-primary-container hover:text-on-primary-container" href="#reservations">Reserve Now</a>
+      <button id="menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-nav" class="lg:hidden flex items-center justify-center p-space-xs text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span></button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="lg:hidden bg-surface border-t border-outline-variant px-4 sm:px-gutter py-space-md flex flex-col gap-space-md" hidden>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface" href="#home">Home</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" href="#accommodation">Accommodation</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" href="#experiences">Experiences</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" href="#gallery">Gallery</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" href="#location">Location</a>
+    <a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" href="#reservations">Reservations</a>
+    <a class="inline-flex items-center justify-center px-space-lg py-space-sm bg-inverse-surface text-inverse-on-surface font-label-md text-label-md tracking-widest uppercase" href="#reservations">Reserve Now</a>
+  </nav>
+</header>
+
+<main class="w-full pt-20 bg-surface" id="home">
+<div class="flex flex-col w-full">
+
+<!-- HERO -->
+<section class="relative w-full min-h-screen -mt-20 overflow-hidden flex items-end">
+  <div data-img="hero" class="ph ph-hero absolute inset-0 scale-105" role="img" aria-label="Solaya Uluwatu villa at golden hour on limestone cliffs above the Indian Ocean"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/30 to-on-background/20"></div>
+  <div class="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-gutter pb-space-xl pt-24 flex flex-col justify-between min-h-screen">
+    <div class="flex flex-wrap gap-space-md justify-between items-start pt-space-xl">
+      <span class="font-label-sm text-label-sm uppercase tracking-widest text-surface-container-highest/90 bg-on-background/30 backdrop-blur-md px-space-md py-space-xs">8.8152° S, 115.0884° E · Uluwatu Sanctuary</span>
+      <div class="hidden md:flex items-center gap-space-sm text-surface-container-highest/80 font-label-sm text-label-sm uppercase tracking-widest">
+        <span>Private Clifftop Estate</span><span>·</span><span>Only Three Residences</span>
+      </div>
+    </div>
+    <div class="max-w-4xl pb-space-lg pt-space-xl">
+      <p class="font-label-md text-label-md uppercase tracking-widest text-secondary-fixed mb-space-sm">Sanctuary of Light and Stone</p>
+      <h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-surface-container-lowest font-normal leading-tight mb-space-md max-w-3xl" style="text-wrap: balance">Discover a Slower Kind of Luxury.</h1>
+      <p class="font-body-lg text-body-lg text-surface-container-high/90 max-w-2xl mb-space-xl font-light">An intimate private retreat above the dramatic coastline of Uluwatu, where contemporary architecture meets the natural beauty of Bali.</p>
+      <div class="flex flex-wrap items-center gap-space-lg">
+        <a class="inline-flex items-center justify-center px-space-xl py-space-md bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-widest transition-all duration-300 hover:bg-inverse-surface shadow-xl" href="#accommodation">Explore the Villa</a>
+        <a class="inline-flex items-center gap-space-sm text-surface-container-lowest font-label-lg text-label-lg uppercase tracking-widest hover:text-secondary-fixed transition-colors group" href="#reservations">
+          <span>Reserve Your Stay</span>
+          <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_right_alt</span>
+        </a>
+      </div>
+    </div>
+    <div class="flex items-center justify-between w-full pt-space-md">
+      <div class="flex items-center gap-space-md text-surface-container-high/70">
+        <span class="font-label-sm text-label-sm tracking-widest uppercase">Scroll to Immerse</span>
+        <div class="w-12 h-px bg-surface-container-highest/40"></div>
+      </div>
+      <div class="animate-bounce text-surface-container-high"><span class="material-symbols-outlined text-2xl">arrow_downward</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND INTRODUCTION -->
+<section class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter py-space-xl my-margin">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+    <div class="lg:col-span-5 flex flex-col gap-space-md min-w-0">
+      <div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xs bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-widest">
+        <span class="w-2 h-2 rounded-full bg-primary"></span>Uluwatu · Bali · Indonesia
+      </div>
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight mt-space-sm" style="text-wrap: balance">Where Nature Meets Timeless Luxury.</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant font-light mt-space-xs leading-relaxed">Set along the southern coast of Bali, Solaya Uluwatu is envisioned as a private sanctuary shaped by natural materials, thoughtful architecture, and the quiet beauty of its surroundings.</p>
+      <p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">Here, high cliffs drop into turquoise surf, monolithic limestone structures open to gentle sea winds, and each sunrise invites an unhurried cadence of living tailored exclusively to a discerning few.</p>
+      <div class="grid grid-cols-3 gap-space-md pt-space-lg">
+        <div><span class="font-headline-md text-headline-md text-primary font-light">120m</span><p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-1">Above Sea Level</p></div>
+        <div><span class="font-headline-md text-headline-md text-primary font-light">03</span><p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-1">Exclusive Suites</p></div>
+        <div><span class="font-headline-md text-headline-md text-primary font-light">1.2ha</span><p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-1">Botanical Grounds</p></div>
+      </div>
+    </div>
+    <div class="lg:col-span-7 grid grid-cols-12 gap-space-md relative pb-8">
+      <div class="col-span-8 overflow-hidden shadow-xl"><div data-img="introBesar" class="ph ph-stone w-full h-[320px] md:h-[480px] transition-transform duration-700 hover:scale-105" role="img" aria-label="Hand-chiseled limestone walls with teak joinery"></div></div>
+      <div class="col-span-4 self-end -mb-8 overflow-hidden shadow-xl"><div data-img="introKecil" class="ph ph-linen w-full h-[220px] md:h-[320px] transition-transform duration-700 hover:scale-105" role="img" aria-label="Ecru linen over a minimalist wood lounger"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="w-full bg-surface-container-low py-margin">
+  <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-space-xl gap-space-md">
+      <div class="max-w-xl">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Tectonic Poetry</span>
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-space-xs">Designed to Belong.</h2>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant max-w-md font-light">Tropical brutalism softened by lush flora, open-air living pavilions, monolithic volcanic stone, and warm oak finishes harmonizing with maritime breezes.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+      <div class="lg:col-span-7 flex flex-col justify-between bg-surface p-space-lg md:p-space-xl shadow-sm min-w-0">
+        <div class="overflow-hidden mb-space-lg"><div data-img="portico" class="ph ph-colonnade w-full h-[300px] md:h-[400px] transition-transform duration-700 hover:scale-105" role="img" aria-label="Open-air colonnade framing the Indian Ocean at sunset"></div></div>
+        <div>
+          <div class="flex items-center justify-between text-outline text-label-sm font-label-sm uppercase tracking-widest mb-space-xs"><span>Colonnade Atrium</span><span>Frame 01</span></div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface">The Horizon Portico</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs font-light">Conceived as a ceremonial transition between earth and water. Monumental columns shade an open terrace that commands infinite ocean horizons.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-5 flex flex-col justify-between bg-surface p-space-lg md:p-space-xl shadow-sm min-w-0">
+        <div class="overflow-hidden mb-space-lg"><div data-img="waterCourt" class="ph ph-court w-full h-[300px] md:h-[400px] transition-transform duration-700 hover:scale-105" role="img" aria-label="Sun-dappled courtyard with a circular black granite water basin"></div></div>
+        <div>
+          <div class="flex items-center justify-between text-outline text-label-sm font-label-sm uppercase tracking-widest mb-space-xs"><span>Inner Sanctuary</span><span>Frame 02</span></div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface">The Water Court</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs font-light">Centering meditation and sensory calm. Natural reflection pools bring ambient thermal cooling and tranquil soundscapes to internal suites.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCOMMODATION -->
+<section id="accommodation" class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter py-margin">
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+    <div>
+      <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Sanctuaries</span>
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-space-xs">Tailored Living Quarters.</h2>
+    </div>
+    <a class="mt-space-md md:mt-0 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary transition-colors inline-flex items-center gap-space-xs" href="#accommodation"><span>View Floorplans &amp; Specs</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+  </div>
+  <div class="flex flex-col gap-space-xl">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-surface-container p-space-md sm:p-space-lg lg:p-space-xl shadow-sm">
+      <div class="lg:col-span-7 overflow-hidden min-w-0"><div data-img="oceanResidence" class="ph ph-ocean-res w-full h-[300px] md:h-[420px] transition-transform duration-700 hover:scale-105" role="img" aria-label="The Ocean Residence with cantilevered deck and infinity plunge pool"></div></div>
+      <div class="lg:col-span-5 flex flex-col justify-center min-w-0">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Residence 01</span>
+        <h3 class="font-headline-md text-headline-md text-on-surface mt-space-xs">The Ocean Residence</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant font-light mt-space-sm leading-relaxed">Spacious private residence with panoramic ocean views, cantilevered ironwood deck, and a private 18m plunge pool floating above the clifftop.</p>
+        <div class="flex flex-wrap gap-x-space-md gap-y-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider my-space-md pt-space-sm"><span>4 Guests</span><span>·</span><span>2 Master Bedrooms</span><span>·</span><span>180° Cliffside Ocean View</span></div>
+        <div class="pt-space-sm"><a class="inline-flex items-center gap-space-sm font-label-md text-label-md uppercase tracking-wider text-primary hover:text-inverse-surface transition-colors group" href="#accommodation"><span>Discover Suite</span><span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_right_alt</span></a></div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+      <div class="lg:col-span-5 flex flex-col bg-surface-container-high p-space-md sm:p-space-lg lg:p-space-xl shadow-sm justify-between min-w-0">
+        <div>
+          <div class="overflow-hidden mb-space-md"><div data-img="gardenSuite" class="ph ph-garden w-full h-[260px] md:h-[320px] transition-transform duration-700 hover:scale-105" role="img" aria-label="The Garden Suite courtyard with frangipani trees and terrazzo bath"></div></div>
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Suite 02</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">The Garden Suite</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-space-sm">Intimate sanctuary nestled among ancient frangipani and tropical palms, featuring a secluded outdoor terrazzo bath open to starlit night skies.</p>
+          <div class="flex flex-wrap gap-x-space-sm text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider my-space-sm"><span>2 Guests</span><span>·</span><span>1 King Suite</span><span>·</span><span>Botanical Courtyard</span></div>
+        </div>
+        <div class="pt-space-md"><a class="inline-flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider text-primary hover:text-inverse-surface transition-colors group" href="#accommodation"><span>Discover Suite</span><span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_right_alt</span></a></div>
+      </div>
+      <div class="lg:col-span-7 flex flex-col bg-surface-container p-space-md sm:p-space-lg lg:p-space-xl shadow-sm justify-between min-w-0">
+        <div>
+          <div class="overflow-hidden mb-space-md"><div data-img="signatureVilla" class="ph ph-villa w-full h-[260px] md:h-[320px] transition-transform duration-700 hover:scale-105" role="img" aria-label="The Signature Villa with teak ceilings and dual horizon pools"></div></div>
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Estate 03</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">The Signature Villa</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant font-light mt-space-sm">The pinnacle of Solaya living. Expansive indoor-outdoor pavilion, private chef pantry, personal sunset dining terrace, and dual cascading horizon pools.</p>
+          <div class="flex flex-wrap gap-x-space-sm text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider my-space-sm"><span>6 Guests</span><span>·</span><span>3 En-Suite Pavilions</span><span>·</span><span>Dual Horizon Edge Pools</span></div>
+        </div>
+        <div class="pt-space-md"><a class="inline-flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider text-primary hover:text-inverse-surface transition-colors group" href="#accommodation"><span>Discover Suite</span><span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_right_alt</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="w-full bg-surface-container-highest py-margin">
+  <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter">
+    <div class="max-w-2xl mb-space-xl">
+      <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Refined Hospitality</span>
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-space-xs">Sanctuary Amenities.</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant font-light mt-space-sm">Consciously curated provisions for stillness, nourishment, and bespoke coastal comfort throughout every hour of stay.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><div><span class="material-symbols-outlined text-4xl text-primary mb-space-md">pool</span><h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs">Cliffside Infinity Pools</h3><p class="font-body-sm text-body-sm text-on-surface-variant font-light">Sunken daybeds and thermal-regulated saltwater pools suspended directly above the ocean surf.</p></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-space-lg">Thermal Regulated</span></div>
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><div><span class="material-symbols-outlined text-4xl text-primary mb-space-md">spa</span><h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs">Open-Air Wellness Pavilions</h3><p class="font-body-sm text-body-sm text-on-surface-variant font-light">Bespoke Balinese healing therapies, sound journeys, and morning yoga guided by local masters.</p></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-space-lg">Ayurvedic Botanicals</span></div>
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><div><span class="material-symbols-outlined text-4xl text-primary mb-space-md">restaurant</span><h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs">Curated In-Villa Dining</h3><p class="font-body-sm text-body-sm text-on-surface-variant font-light">Private executive chefs crafting hyper-local tasting menus paired with a temperature-controlled cellar.</p></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-space-lg">Farm-to-Cliff Table</span></div>
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><div><span class="material-symbols-outlined text-4xl text-primary mb-space-md">potted_plant</span><h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs">Botanical Water Courts</h3><p class="font-body-sm text-body-sm text-on-surface-variant font-light">Ancient frangipani groves, water lilies, and private shaded reading niches scattered across the landscape.</p></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-space-lg">Indigenous Flora</span></div>
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><div><span class="material-symbols-outlined text-4xl text-primary mb-space-md">concierge</span><h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs">Dedicated Estate Butler</h3><p class="font-body-sm text-body-sm text-on-surface-variant font-light">Intuitive 24-hour concierge service orchestrating every transport, packing, and bespoke coastal itinerary.</p></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-space-lg">Discrete Service</span></div>
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><div><span class="material-symbols-outlined text-4xl text-primary mb-space-md">surfing</span><h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs">Private Coastal Path Access</h3><p class="font-body-sm text-body-sm text-on-surface-variant font-light">Carved stone cliffside trails leading directly to quiet coves and private cliff-edge sunset pavilions.</p></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-space-lg">Direct Shore Access</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter py-margin">
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+    <div>
+      <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Curated Moments</span>
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-space-xs">Experiences Beyond the Ordinary.</h2>
+    </div>
+    <a class="mt-space-md md:mt-0 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary transition-colors inline-flex items-center gap-space-xs" href="#experiences"><span>View All Experiences</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+    <div class="group relative overflow-hidden bg-on-background h-[400px] md:h-[460px] flex flex-col justify-end p-space-lg shadow-md cursor-pointer">
+      <div data-img="diningExp" class="ph ph-dining absolute inset-0 transition-transform duration-700 group-hover:scale-110 opacity-70" role="img" aria-label="Candlelit private dinner on a limestone ledge"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/40 to-transparent"></div>
+      <div class="relative z-10"><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Gastronomy</span><h3 class="font-headline-sm text-headline-sm text-surface-container-lowest mt-1 mb-2">Private Sunset Cliff Dining</h3><p class="font-body-sm text-body-sm text-surface-container-high/80 font-light line-clamp-2">A bespoke five-course degustation curated by our private chef, served on a secluded promontory.</p></div>
+    </div>
+    <div class="group relative overflow-hidden bg-on-background h-[400px] md:h-[460px] flex flex-col justify-end p-space-lg shadow-md cursor-pointer">
+      <div data-img="soundExp" class="ph ph-sound absolute inset-0 transition-transform duration-700 group-hover:scale-110 opacity-70" role="img" aria-label="Balinese healer with Tibetan sound bowls"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/40 to-transparent"></div>
+      <div class="relative z-10"><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Wellness</span><h3 class="font-headline-sm text-headline-sm text-surface-container-lowest mt-1 mb-2">Sacred Sound &amp; Holistic Bath</h3><p class="font-body-sm text-body-sm text-surface-container-high/80 font-light line-clamp-2">Tibetan singing bowl resonance followed by private herbal flower immersions in your pavilion.</p></div>
+    </div>
+    <div class="group relative overflow-hidden bg-on-background h-[400px] md:h-[460px] flex flex-col justify-end p-space-lg shadow-md cursor-pointer">
+      <div data-img="yachtExp" class="ph ph-yacht absolute inset-0 transition-transform duration-700 group-hover:scale-110 opacity-70" role="img" aria-label="Private catamaran below the southern Bali cliffs"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/40 to-transparent"></div>
+      <div class="relative z-10"><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Voyage</span><h3 class="font-headline-sm text-headline-sm text-surface-container-lowest mt-1 mb-2">Secret Coves Yacht Charter</h3><p class="font-body-sm text-body-sm text-surface-container-high/80 font-light line-clamp-2">Explore inaccessible white sand beaches and reef snorkel passages aboard our dedicated private tender.</p></div>
+    </div>
+    <div class="group relative overflow-hidden bg-on-background h-[400px] md:h-[460px] flex flex-col justify-end p-space-lg shadow-md cursor-pointer">
+      <div data-img="kecakExp" class="ph ph-kecak absolute inset-0 transition-transform duration-700 group-hover:scale-110 opacity-70" role="img" aria-label="Kecak fire dance at the Uluwatu sea temple at dusk"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-on-background via-on-background/40 to-transparent"></div>
+      <div class="relative z-10"><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Culture</span><h3 class="font-headline-sm text-headline-sm text-surface-container-lowest mt-1 mb-2">Kecak Sunset Cliff Excursion</h3><p class="font-body-sm text-body-sm text-surface-container-high/80 font-light line-clamp-2">VIP chauffeured access to the historic Uluwatu sea temple for an authentic twilight fire chant.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="w-full bg-surface-container-low py-margin">
+  <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl">
+      <div>
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Visual Archive</span>
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-space-xs">A Portrait of Quietude.</h2>
+      </div>
+      <a class="mt-space-md md:mt-0 inline-flex items-center gap-space-xs font-label-md text-label-md uppercase tracking-wider text-primary hover:text-on-surface transition-colors" href="#gallery"><span>Explore the Full Gallery</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+    </div>
+    <div class="grid grid-cols-12 gap-space-md">
+      <div class="col-span-12 md:col-span-7 overflow-hidden shadow-sm"><div data-img="galleryPool" class="ph ph-pool w-full h-[300px] md:h-[460px] transition-transform duration-700 hover:scale-105" role="img" aria-label="Clifftop infinity pool meeting the sunset horizon"></div></div>
+      <div class="col-span-12 md:col-span-5 flex flex-col gap-space-md">
+        <div class="overflow-hidden shadow-sm h-[220px]"><div data-img="galleryStone" class="ph ph-stone w-full h-full transition-transform duration-700 hover:scale-105" role="img" aria-label="Rough-hewn limestone blocks with brass joinery"></div></div>
+        <div class="overflow-hidden shadow-sm h-[220px]"><div data-img="galleryBed" class="ph ph-bed w-full h-full transition-transform duration-700 hover:scale-105" role="img" aria-label="Minimalist bed in ecru linen with teak bedside tables"></div></div>
+      </div>
+    </div>
+    <div class="grid grid-cols-12 gap-space-md mt-space-md">
+      <div class="col-span-12 md:col-span-4 overflow-hidden shadow-sm h-[240px] md:h-[280px]"><div data-img="galleryTable" class="ph ph-table w-full h-full transition-transform duration-700 hover:scale-105" role="img" aria-label="Candlelit evening table with earthenware and frangipani"></div></div>
+      <div class="col-span-12 md:col-span-8 overflow-hidden shadow-sm h-[240px] md:h-[280px]"><div data-img="galleryAerial" class="ph ph-aerial w-full h-full transition-transform duration-700 hover:scale-105" role="img" aria-label="Aerial view of limestone cliffs, turquoise surf and coastal jungle"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter py-margin">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+    <div class="lg:col-span-5 min-w-0">
+      <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">The Peninsula</span>
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-space-xs">Above the Southern Coast of Bali.</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant font-light mt-space-md leading-relaxed">Perched on the southern tip of the Bukit Peninsula, Uluwatu is renowned for dramatic ocean-carved limestone bluffs, world-class surf breaks, and ancient temple rituals.</p>
+      <p class="font-body-md text-body-md text-on-surface-variant font-light mt-space-sm leading-relaxed">Solaya resides in complete seclusion along Jl. Pantai Suluban, offering absolute privacy while remaining intimately connected to the island's finest coastal spots.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-space-xl">
+        <div class="bg-surface-container p-space-md"><span class="font-headline-sm text-headline-sm text-primary font-light">08 min</span><p class="font-title-md text-title-md text-on-surface mt-1">Uluwatu Temple</p><p class="font-body-sm text-body-sm text-on-surface-variant">Sacred Clifftop Heritage</p></div>
+        <div class="bg-surface-container p-space-md"><span class="font-headline-sm text-headline-sm text-primary font-light">12 min</span><p class="font-title-md text-title-md text-on-surface mt-1">Padang Padang</p><p class="font-body-sm text-body-sm text-on-surface-variant">Secluded White Sand Cove</p></div>
+        <div class="bg-surface-container p-space-md"><span class="font-headline-sm text-headline-sm text-primary font-light">15 min</span><p class="font-title-md text-title-md text-on-surface mt-1">Savaya Bali</p><p class="font-body-sm text-body-sm text-on-surface-variant">Clifftop Music &amp; Lounge</p></div>
+        <div class="bg-surface-container p-space-md"><span class="font-headline-sm text-headline-sm text-primary font-light">45 min</span><p class="font-title-md text-title-md text-on-surface mt-1">DPS Airport</p><p class="font-body-sm text-body-sm text-on-surface-variant">Private Chauffeur Transfer</p></div>
+      </div>
+    </div>
+    <div class="lg:col-span-7 min-w-0">
+      <div class="relative bg-surface-container-high p-space-sm shadow-md">
+        <div data-img="map" class="ph ph-map w-full h-[420px] md:h-[520px]" role="img" aria-label="Map of Uluwatu, Bali, Indonesia"></div>
+        <div class="absolute bottom-space-lg left-space-lg right-space-lg sm:right-auto bg-surface/95 backdrop-blur-md p-space-md shadow-lg max-w-xs">
+          <div class="flex items-center gap-space-xs text-primary mb-1"><span class="material-symbols-outlined text-sm">near_me</span><span class="font-label-sm text-label-sm uppercase tracking-widest font-semibold">Coordinates</span></div>
+          <p class="font-body-sm text-body-sm text-on-surface">Jl. Pantai Suluban No. 88, Pecatu, Uluwatu, Bali</p>
+          <p class="font-label-sm text-label-sm text-outline mt-1">Helipad arrival coordinated upon request</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUEST NOTES -->
+<section class="w-full bg-surface-container py-margin">
+  <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter">
+    <div class="text-center max-w-xl mx-auto mb-space-xl">
+      <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Guest Notes</span>
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-space-xs">Sensory Memories.</h2>
+      <span class="font-label-sm text-label-sm italic text-outline block mt-2">Illustrative Guest Notes · Portfolio Preview</span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><p class="font-headline-sm text-headline-sm italic text-on-surface font-light leading-snug">"Watching the sunset from the cantilevered deck while the tide pulled back below was the single most transcendent hour of our year."</p><div class="mt-space-lg pt-space-md"><p class="font-title-md text-title-md text-on-surface font-medium">Elena &amp; Marc Vance</p><p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Geneva, Switzerland</p></div></div>
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><p class="font-headline-sm text-headline-sm italic text-on-surface font-light leading-snug">"The architecture does not compete with Uluwatu’s wild coastline; it frames it with immense stillness, reverence, and grace."</p><div class="mt-space-lg pt-space-md"><p class="font-title-md text-title-md text-on-surface font-medium">Julian Thorne</p><p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">London, United Kingdom</p></div></div>
+      <div class="bg-surface p-space-lg md:p-space-xl shadow-sm flex flex-col justify-between"><p class="font-headline-sm text-headline-sm italic text-on-surface font-light leading-snug">"Exceptional privacy. The dedicated butler service made every moment completely invisible yet meticulously executed."</p><div class="mt-space-lg pt-space-md"><p class="font-title-md text-title-md text-on-surface font-medium">Akihiro &amp; Saki Tanaka</p><p class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Tokyo, Japan</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section id="reservations" class="relative w-full py-margin overflow-hidden flex items-center justify-center">
+  <div data-img="cta" class="ph ph-cta absolute inset-0" role="img" aria-label="Sunset panorama over the private clifftop estate"></div>
+  <div class="absolute inset-0 bg-on-background/70 backdrop-blur-[2px]"></div>
+  <div class="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-gutter text-center py-space-xl">
+    <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Private Sanctuary Reservations</span>
+    <h2 class="font-display-hero text-display-hero-mobile md:text-display-hero text-surface-container-lowest font-normal mt-space-sm mb-space-md" style="text-wrap: balance">Your Private Escape Awaits.</h2>
+    <p class="font-body-lg text-body-lg text-surface-container-high/90 max-w-xl mx-auto mb-space-xl font-light">Discover a stay defined by thoughtful design, quiet moments, and the natural beauty of Bali.</p>
+    <div class="inline-flex flex-col sm:flex-row items-center gap-space-md">
+      <a class="inline-flex items-center justify-center px-space-xl py-space-md bg-secondary-container text-on-secondary-container font-label-lg text-label-lg uppercase tracking-widest hover:bg-surface-container-lowest transition-colors shadow-2xl" href="#reservations">Check Availability</a>
+      <a class="inline-flex items-center justify-center px-space-xl py-space-md bg-transparent text-surface-container-lowest font-label-lg text-label-lg uppercase tracking-widest hover:text-secondary-fixed transition-colors" href="#accommodation">Download Estate Folio →</a>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer class="w-full bg-surface-container-low text-on-surface-variant">
+  <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-gutter pt-margin pb-space-xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-margin">
+      <div class="lg:col-span-4 flex flex-col gap-space-md">
+        <div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-wide">SOLAYA</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary -mt-1">Uluwatu Sanctuaries</span></div>
+        <p class="font-headline-sm text-headline-sm italic text-on-surface font-normal mt-space-sm">Where Nature Meets Timeless Luxury.</p>
+        <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-space-xs">Carved into limestone clifftops overlooking the Indian Ocean. Designed for intentional stillness, architectural poetry, and unhurried coastal immersion.</p>
+      </div>
+      <div class="lg:col-span-2 flex flex-col gap-space-sm">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-semibold mb-space-xs">Exploration</span>
+        <ul class="flex flex-col gap-space-xs">
+          <li class="font-body-sm text-body-sm hover:text-on-surface transition-colors"><a href="#accommodation">Cliffside Suites</a></li>
+          <li class="font-body-sm text-body-sm hover:text-on-surface transition-colors"><a href="#experiences">Holistic Wellness</a></li>
+          <li class="font-body-sm text-body-sm hover:text-on-surface transition-colors"><a href="#experiences">Private Dining</a></li>
+          <li class="font-body-sm text-body-sm hover:text-on-surface transition-colors"><a href="#gallery">Visual Archive</a></li>
+          <li class="font-body-sm text-body-sm hover:text-on-surface transition-colors"><a href="#location">Sanctuary Map</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3 flex flex-col gap-space-sm min-w-0">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-semibold mb-space-xs">Sanctuary Concierge</span>
+        <div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+          <p class="text-on-surface">Jl. Pantai Suluban No. 88, Uluwatu</p>
+          <p>Bali 80361, Indonesia</p>
+          <p class="font-label-sm text-label-sm tracking-widest text-outline mt-space-xs">8.8152° S, 115.0884° E</p>
+          <p class="mt-space-sm break-words"><span class="text-on-surface">Curated Inquiries:</span> retreat@solaya-uluwatu.com</p>
+          <p><span class="text-on-surface">Direct Line:</span> +62 361 849 8000</p>
+        </div>
+      </div>
+      <div class="lg:col-span-3 flex flex-col gap-space-md">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-semibold">Private Dispatch</span>
+        <p class="font-body-sm text-body-sm">Receive seasonal solstices, architecture digests, and unlisted suite releases.</p>
+        <form id="dispatch-form" class="flex flex-col gap-space-xs mt-space-xs">
+          <input id="dispatch-email" class="w-full bg-surface-container-lowest px-space-md py-space-sm font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Your email address" type="email" required>
+          <button class="w-full bg-primary text-on-primary py-space-sm font-label-md text-label-md uppercase tracking-wider hover:bg-inverse-surface hover:text-inverse-on-surface transition-colors" type="submit">Request Gazette</button>
+          <p id="dispatch-status" class="font-body-sm text-body-sm text-secondary" role="status" hidden>Thank you. This is a preview, so no email was sent.</p>
+        </form>
+      </div>
+    </div>
+    <div class="pt-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md font-body-sm text-body-sm text-outline">
+      <div class="flex flex-col sm:flex-row sm:items-center gap-space-md">
+        <span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant">© 2025 Solaya Uluwatu. All rights reserved.</span>
+        <span class="hidden sm:inline font-label-sm text-label-sm">·</span>
+        <span class="font-label-sm text-label-sm italic text-secondary">A Fictional Hospitality Portfolio Project · Solaya Uluwatu</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-label-sm text-label-sm uppercase tracking-wider">
+        <a class="hover:text-on-surface transition-colors" href="#home">Instagram</a>
+        <a class="hover:text-on-surface transition-colors" href="#home">Journal</a>
+        <a class="hover:text-on-surface transition-colors" href="#home">Architectural Digest</a>
+        <a class="hover:text-on-surface transition-colors" href="#home">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
